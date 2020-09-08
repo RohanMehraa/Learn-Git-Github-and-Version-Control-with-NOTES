@@ -1,0 +1,101 @@
+git init
+- Command to initialise a git local repository.
+
+git status
+- Command to check which files are under the staging area. And which files are currently untracked.
+
+git add filename.extension
+- Command to add a file to the staging area and start tracking.
+
+git commit -m "Commit Message to be written in PRESENT TENSE"
+- Command to commit a file with a commit message.
+
+git log
+- Command to see the commit log.
+
+git add .
+- command to add all the files to the staging area instead of doing it one by one.
+
+git commit -m "Added other files chp2 and 3"
+- made a second commit using the same command as the previous case, it commits the files which are in staging area.
+
+
+git rm --cached -r .
+- command to remove everything inside to current directory from the staging area.. Here -r stands for recursive, and by using '.' it means for all. 
+
+
+git diff chapter3.txt 
+- this command will tell the differences between the last commit and the current file.
+
+git checkout chapter3.txt
+- command to restore the file to the previous commit/checkpoint created.
+
+-----------------------------------------------------------------------
+GITHUB
+
+git remote add origin http://github.com/rohanmehraa/repostioryname.git
+- Command to add the local repository to the remote github repository. Please note that origin here is just a name and we can use other name here also, but it is highly recommended to use origin as it's a general practice in the programmer community. After origin we've to specify the link of the remote repository created on github.
+
+
+git push -u origin master
+-  using the -u flag, it creates a link between the local and remote repo, it pushes the local repository to the remote repository[named origin], to the master branch.
+
+
+touch .gitignore
+- creates a hidden file named .gitignore
+inside this .gitignore file we've to add the file names  we don't want to add to the staging area and commit on every new line.
+we can use '#' sign for comments and '*' as wild card to select all files of a particular type. eg: *.txt etc.
+After creating this .gitignore file. Now, if one adds the files to the staging area using '.', then it automatically ignores the files which are described in the .gitignore file.
+
+
+github.com/github/gitignore 
+- is a github repository which consists of templates for project types. These gitignore template files consists of the file names which are sensitive and shouldn't be committed on a public repo.
+
+
+git clone github.com/rohanmehraa/repositoryname.git
+- git clone is the command used to clone a remote repo to your local repository on your system.
+one can check all the commit messages as well which the user had made on their remote repo, using git status.
+
+
+git branch newBranch
+- command to create a new branch.
+
+git branch
+- command to see all the branches. the '*' sign tells us which branch we're are currently on.
+
+git checkout branchName
+- command to switch to a particular branch.
+
+[to merge with master branch you've to be on the master branch at first]
+git merge branchName
+- command to merge a branch with master. after running this command it opens an area where you can add a merge msg. To Quit that we've to enter ":q!".
+ 
+
+FORKING:
+Unlike cloning where a remote repo is cloned to a local repo on a local machine. By forking a github repo, a user is simply copying the repo to his own remote repository online on github. He can work on that either online or by cloning it to local repo. Then make a pull request to the original user after contributing. The request is called PULL-request as the original user has the authority to decide whether the new version should be pulled in or not.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
