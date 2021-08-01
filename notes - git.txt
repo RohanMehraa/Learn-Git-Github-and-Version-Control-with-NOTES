@@ -37,7 +37,7 @@ git remote add origin http://github.com/rohanmehraa/repostioryname.git
 - Command to add the local repository to the remote github repository. Please note that origin here is just a name and we can use other name here also, but it is highly recommended to use origin as it's a general practice in the programmer community. After origin we've to specify the link of the remote repository created on github.
 
 
-git push -u origin master
+git push -u origin master [master has been changed to main, so don't use master now - instead use main]
 -  using the -u flag, it creates a link between the local and remote repo, it pushes the local repository to the remote repository[named origin], to the master branch.
 
 
